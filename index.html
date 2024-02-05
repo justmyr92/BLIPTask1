@@ -12,16 +12,29 @@
                 <div class="navbar__content">
                     <div class="logo__container">
                         <button class="navbar__toggle" id="navbar__toggle">
-                            <svg width="28" height="24" xmlns="http://www.w3.org/2000/svg">
+                            <svg
+                                width="28"
+                                height="24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
                                 <rect width="26" height="4" fill="white" />
-                                <rect y="10" width="20" height="4" fill="white" />
-                                <rect y="20" width="30" height="4" fill="white" />
-                              </svg>
-                            </button>
+                                <rect
+                                    y="10"
+                                    width="20"
+                                    height="4"
+                                    fill="white"
+                                />
+                                <rect
+                                    y="20"
+                                    width="30"
+                                    height="4"
+                                    fill="white"
+                                />
+                            </svg>
+                        </button>
                         <a href="index.html" class="logo">BrandName</a>
                     </div>
-                    
-                
+
                     <div class="navbar__menu">
                         <ul class="navbar__list">
                             <li class="navbar__item">
@@ -33,10 +46,21 @@
                                 <a href="index.html" class="navbar__link"
                                     >Shop</a
                                 >
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <polyline points="6 9 12 15 18 9"></polyline>
-                                  </svg>
-                                  
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    width="20"
+                                    height="20"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <polyline
+                                        points="6 9 12 15 18 9"
+                                    ></polyline>
+                                </svg>
                             </li>
                             <li class="navbar__item">
                                 <a href="index.html" class="navbar__link"
@@ -56,10 +80,23 @@
                             </li>
                         </ul>
                     </div>
-                    
                 </div>
                 <div class="account__container">
-                    <svg class="feather feather-user" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>             
+                    <svg
+                        class="feather feather-user"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg>
                     <a href="login.html" class="account__link">Login</a>
                     <span class="account__divider">/</span>
                     <a href="register.html" class="account__link">Register</a>
@@ -78,9 +115,10 @@
                             />
                             <div class="text__container">
                                 <p class="item__count">5 Items</p>
-                                </p>
                                 <h1 class="main__title">FURNITURE</h1>
-                                <a class="read__more" href="index.html">Read More</a>
+                                <a class="read__more" href="index.html"
+                                    >Read More</a
+                                >
                             </div>
                         </div>
                     </div>
@@ -94,9 +132,10 @@
                                 />
                                 <div class="text__container">
                                     <p class="item__count">5 Items</p>
-                                    </p>
                                     <h1 class="main__title">FURNITURE</h1>
-                                    <a class="read__more" href="index.html">Read More</a>
+                                    <a class="read__more" href="index.html"
+                                        >Read More</a
+                                    >
                                 </div>
                             </div>
                         </div>
@@ -110,11 +149,13 @@
                                     />
                                     <div class="text__container">
                                         <p class="item__count">5 Items</p>
-                                        </p>
                                         <h1 class="main__title">FURNITURE</h1>
-                                        <a class="read__more" href="index.html">Read More</a>
+                                        <a class="read__more" href="index.html"
+                                            >Read More</a
+                                        >
                                     </div>
-                                </div></div>
+                                </div>
+                            </div>
                             <div class="sub__col__2">
                                 <div class="img__container">
                                     <img
@@ -124,15 +165,29 @@
                                     />
                                     <div class="text__container">
                                         <p class="item__count">5 Items</p>
-                                        </p>
                                         <h1 class="main__title">FURNITURE</h1>
-                                        <a class="read__more" href="index.html">Read More</a>
+                                        <a class="read__more" href="index.html"
+                                            >Read More</a
+                                        >
                                     </div>
-                                </div></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </body>
+    <script>
+        const navbar__toggle = document.getElementById("navbar__toggle");
+        const navbar__menu = document.querySelector(".navbar__menu");
+        const account__container = document.querySelector(
+            ".account__container"
+        );
+
+        navbar__toggle.addEventListener("click", () => {
+            navbar__menu.classList.toggle("active");
+            account__container.classList.toggle("active");
+        });
+    </script>
 </html>
