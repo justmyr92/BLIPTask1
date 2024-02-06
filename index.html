@@ -286,6 +286,20 @@
                 menuContainer.classList.toggle("hidden");
                 accountContainer.classList.toggle("hidden");
             });
+
+            function updateVisibility() {
+                if (window.innerWidth > 767) {
+                    menuContainer.classList.remove("hidden");
+                    accountContainer.classList.remove("hidden");
+                } else {
+                    menuContainer.classList.add("hidden");
+                    accountContainer.classList.add("hidden");
+                }
+            }
+
+            updateVisibility();
+
+            window.addEventListener("resize", updateVisibility);
         });
     </script>
 </html>
